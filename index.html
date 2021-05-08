@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="nav_bar">
+                Excel 
+        </div>
+        <div class="menu_container">
+            <div class="operation_container">
+                <div class="save_container">
+                    <i class="far fa-save"></i>
+                    Save
+                </div>
+                <div class="download_container">
+                    <i class="fas fa-download"></i>
+                    Download
+                </div>
+                <div class="delete_container">
+                    <i class="fas fa-trash"></i>
+                    Delete
+                </div>
+            </div>
+            <div class="font_container">
+                <div class="subgroup">
+                    <select id="font_family" class = "font_family">
+                        <option value="Arial">Arial</option>
+                        <option value="Sans-Serif">Sans-Serif</option>
+                        <option value="Forte">Forte</option>
+                        <option value="Calibri">Calibri</option>
+                        <option value="TimesRoman">TimesRoman</option>
+                    </select>
+                    <div class="BUI_container">
+                        <input type="button" value="B" class = "bold">
+                        <input type="button" value="U" class = "underline">
+                        <input type="button" value="I" class = "italic">
+                    </div>
+                </div>
+                
+                <div class="subgroup">
+                    <select id="font_size">
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                    </select>
+                    <div class="color_container">
+                        <input type="color" id="color">
+                        <input type="color" id="bg_color">
+                    </div>
+                </div>
+            </div>
+            <div class="alignment_container">
+                <input type="button" value="L" class = "left">
+                <input type="button" value="C" class = "center">
+                <input type="button" value="R" class = "right">
+            </div>
+        </div>
+        <div class="formula_container">
+            <input type="text" class="address_box" readonly>
+            <div class="separator">:</div>
+            <input type="text" class="formula_box">
+
+        </div>
+        <div class="grid_container">
+            <div class="top_left_block">
+
+            </div>
+            <div class="top_row">
+    
+            </div>
+            <div class="left_col">
+    
+            </div>
+            <div class="grid">
+    
+            </div>
+        </div>
+        <div class="sheet_container">
+            <div class="plus_container">
+                <i class="fas fa-plus-circle icon"></i>
+            </div>
+            <div class="sheets">
+                <div class="sheet active_sheet" sheet_idx = "1">Sheet 1</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
