@@ -90,6 +90,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .alignment_container>*{
@@ -234,3 +235,7 @@ body{
 }
 
 
+/*  Add box shadow  */
+.active_btn{
+    background-color: #bfbfbf;
+}

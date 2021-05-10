@@ -45,16 +45,18 @@
                 </div>
                 
                 <div class="subgroup">
-                    <select id="font_size">
-                        <option value="8">8</option>
+                    <select id="font_size" class = "font_size">
                         <option value="10">10</option>
                         <option value="12">12</option>
                         <option value="14">14</option>
                         <option value="16">16</option>
+                        <option value="32">32</option>
+                        <option value="64">64</option>
+
                     </select>
                     <div class="color_container">
-                        <input type="color" id="color">
-                        <input type="color" id="bg_color">
+                        <input type="color" id="color" class = "color">
+                        <input type="color" id="bg_color" class = "bg_color">
                     </div>
                 </div>
             </div>
@@ -93,6 +95,7 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="init.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
