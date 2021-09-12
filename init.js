@@ -48,8 +48,8 @@ function initSheetDB(){
                 fontFamily : "Arial",
                 halign : "left",
                 fontSize : "16",
-                color : "",
-                bgColor : "",
+                color : "#000000",
+                bgColor : "#ffffff",
                 value : "",
                 children: [],
                 formula :""

@@ -7,6 +7,7 @@
     <title>Excel Clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <div class="main_container">
@@ -15,15 +16,16 @@
         </div>
         <div class="menu_container">
             <div class="operation_container">
-                <div class="save_container">
-                    <i class="far fa-save"></i>
+                <div class="save_container save">
+                    <i class="far fa-save "></i>
                     Save
                 </div>
-                <div class="download_container">
-                    <i class="fas fa-download"></i>
-                    Download
+                <div class="open_container open">
+                    <i class="far fa-folder-open"></i>
+                    <input type="file" id="" class="far fa-folder-open openfile" value="Open">
+                    Open
                 </div>
-                <div class="delete_container">
+                <div class="delete_container delete">
                     <i class="fas fa-trash"></i>
                     Delete
                 </div>
@@ -38,9 +40,10 @@
                         <option value="TimesRoman">TimesRoman</option>
                     </select>
                     <div class="BUI_container">
-                        <input type="button" value="B" class = "bold">
-                        <input type="button" value="U" class = "underline">
-                        <input type="button" value="I" class = "italic">
+                        
+                        <input type="button" value="format_bold" class = "material-icons icon-bold bold">
+                        <input type="button" value="format_underline" class = "material-icons icon-underline underline">
+                        <input type="button" value="format_italic" class = "material-icons icon-italic italic">
                     </div>
                 </div>
                 
@@ -55,15 +58,15 @@
 
                     </select>
                     <div class="color_container">
-                        <input type="color" id="color" class = "color">
+                        <input type="color" id="color" class = "material-icons icon-color-fill color" value="format_color_fill">
                         <input type="color" id="bg_color" class = "bg_color">
                     </div>
                 </div>
             </div>
             <div class="alignment_container">
-                <input type="button" value="L" class = "left">
-                <input type="button" value="C" class = "center">
-                <input type="button" value="R" class = "right">
+                <input type="button" value="format_align_left" class = "material-icons icon-align-left left">
+                <input type="button" value="format_align_center" class = "material-icons icon-align-center center">
+                <input type="button" value="format_align_right" class = "material-icons icon-align-right right">
             </div>
         </div>
         <div class="formula_container">
@@ -97,5 +100,6 @@
     </div>
     <script src="init.js" defer></script>
     <script src="script.js" defer></script>
+    <script src = "newopensave.js" defer></script>
 </body>
 </html>

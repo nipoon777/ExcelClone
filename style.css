@@ -38,6 +38,7 @@ body{
     align-items: center;
 }
 
+
 .operation_container>*{
     width: 33%;
     display: flex;
@@ -49,16 +50,20 @@ body{
     font-size: 2rem;
 }
 
-.fa-download{
+.fa-folder-open{
     font-size: 2rem;
 }
-
+.openfile{
+    opacity: 0;
+    font-size: 0px;
+}
 .fa-trash{
     font-size: 2rem;
 }
 .font_container{
     display: flex;
     justify-content: space-around;
+    
 }
 .subgroup{
     display: flex;
@@ -71,19 +76,29 @@ body{
 .subgroup>*{
     width: 100%;
 }
+.font_family, .font_size{
+    border: 0.2px solid rgb(218, 213, 213);
+    color: #3e3e3f;
+}
+
 .BUI_container{
     display: flex;
     justify-content: space-between;
 }
 .BUI_container>*{
     width:30%;
+    border: 0.2px solid rgb(218, 213, 213);
+    color: #3e3e3f;
 }
 .color_container>*{
     width : 45%;
+    border: 0.2px solid rgb(218, 213, 213);
+    color: #3e3e3f;
 }
 .color_container{
     display: flex;
     justify-content: space-between;
+
 }
 /* Alignment Container */
 .alignment_container{
@@ -91,10 +106,13 @@ body{
     align-items: center;
     justify-content: center;
     
+    
 }
 
 .alignment_container>*{
     width: 20%;
+    border: 0.2px solid rgb(218, 213, 213);
+    color: #3e3e3f;
 }
 
 
@@ -249,5 +267,5 @@ body{
 
 /*  Add box shadow  */
 .active_btn{
-    background-color: #bfbfbf;
+    background-color: #d8d2d2;
 }
