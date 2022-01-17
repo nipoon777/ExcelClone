@@ -8,6 +8,7 @@ The Web Application has most of the Features of a Normal Spreadsheet Application
 Implementation of Website is done in a way to understand how Data Structures are used in real application, how data manipulation can be done. The application is built by using vanilla JavaScript, HTML, CSS.
 
 <img src="./excel1.png">
+
 # Features:
 
 - Apply Formulas to Cell
