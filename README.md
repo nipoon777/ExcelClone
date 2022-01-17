@@ -22,5 +22,5 @@ Implementation of Website is done in a way to understand how Data Structures are
 # Learning:
 Applied the Graphical Cycle detecting alogorithm to figure out if there is a cycle formation when applying formulas.
 
-<img src = "./excel3.png">
+<img src = "./Excel3.png">
 
